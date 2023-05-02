@@ -1,9 +1,3 @@
-/*
- Implementation of class StateGraph for the bloc world problem
- Copyright (C) 2023 Christine Solnon
- Ce programme est un logiciel libre ; vous pouvez le redistribuer et/ou le modifier au titre des clauses de la Licence Publique Générale GNU, telle que publiée par la Free Software Foundation. Ce programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE GARANTIE ; sans même une garantie implicite de COMMERCIABILITE ou DE CONFORMITE A UNE UTILISATION PARTICULIERE. Voir la Licence Publique Générale GNU pour plus de détails.
- */
-
 class StateGraph{
 public:
     StateGraph();
@@ -37,7 +31,6 @@ private:
     int nbBlocs; // Number of blocs
     int nbStacks; // Number of stacks
 };
-
 
 StateGraph::StateGraph(){
     // Constructor that creates a bloc world planning problem
@@ -110,7 +103,6 @@ int StateGraph::heuristic(const State &s) const{
         }
     }
     
-    
     return somme;
 }
 
@@ -144,10 +136,3 @@ void StateGraph::print(const State &s, const State &s_succ){
         }
     }
 }
-
-
-
-
-
-
-
