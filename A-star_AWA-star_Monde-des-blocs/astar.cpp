@@ -1,4 +1,3 @@
-//test?
 #include <queue>
 #include <unordered_map>
 #include <limits>
@@ -79,7 +78,3 @@ int main(){
     astar(g.initialState(), g, 2);
     return 0;
 }
-
-
-
-
